@@ -6,6 +6,7 @@ mod sh;
 mod control_flow;
 mod loops;
 mod combination_lock;
+mod enumerations;
 
 use std::mem;
 
@@ -25,7 +26,8 @@ fn main() {
     //loops::for_loop();
     //control_flow::match_statement();
     //combination_lock::start();
-    structures();
+    //structures();
+    enumerations::enums();
 }
 
 struct Point {
