@@ -1,6 +1,10 @@
 #![allow(dead_code)]
 #![allow(unused_imports)]
 
+mod sh;
+mod control_flow;
+mod loops;
+
 use std::mem;
 
 const MEANING_OF_LIFE:u8 = 42; // global constant, no fixed address
@@ -13,6 +17,11 @@ fn main() {
     //operators();
     //scopes_and_shadowing();
     //declaring_constants();
+    //sh::stack_and_heap();
+    //control_flow::if_statement();
+    //loops::while_and_loop();
+    //loops::for_loop();
+    control_flow::match_statement();
 }
 
 fn declaring_constants() {
