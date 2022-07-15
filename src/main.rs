@@ -1,9 +1,11 @@
 #![allow(dead_code)]
 #![allow(unused_imports)]
+#![allow(unused_variables)]
 
 mod sh;
 mod control_flow;
 mod loops;
+mod combination_lock;
 
 use std::mem;
 
@@ -21,7 +23,27 @@ fn main() {
     //control_flow::if_statement();
     //loops::while_and_loop();
     //loops::for_loop();
-    control_flow::match_statement();
+    //control_flow::match_statement();
+    //combination_lock::start();
+    structures();
+}
+
+struct Point {
+    x: f64,
+    y: f64
+}
+
+struct Line {
+    start: Point,
+    end: Point
+}
+
+fn structures() {
+    let p = Point { x: 3.0, y:4.0 };
+    println!("point p is at ({},{})", p.x, p.y);
+
+    let p2 = Point { x: 5.0, y: 4.0};
+    let my_line = Line {start: p, end: p2};
 }
 
 fn declaring_constants() {

@@ -1,3 +1,5 @@
+#![allow(unused_variables)]
+
 pub fn if_statement() {
     let temp = 35;
 
@@ -34,7 +36,7 @@ pub fn match_statement() {
 
     let x = false;
     let s = match x {
-        true => yes,
-        false => no
+        true => "yes",
+        false => "no"
     };
 }
